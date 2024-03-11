@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUIApp.Core.Views.ConnectionHelp.ConnectionHelpDetailPage"
+             Title="ConnectionHelpDetailPage">
+      <ScrollView x:Name="myscrollview" Padding="10,20,10,10">
+            <StackLayout  x:Name="teststack" Padding="0,20,10,0">
+                <Label x:Name="lb1Discription"  Padding="0,5,0,0"  HorizontalTextAlignment="Start"  FontSize = "15"  Text="" LineBreakMode="WordWrap"
+                       MaxLines="40" />
+                <Image x:Name="img1"  Margin="0,0,0,0" MaximumHeightRequest="120"/>
+                 <Label x:Name = "lb2Discription"  Padding="0,15,0,0"  HorizontalTextAlignment="Start"  FontSize = "15" Text=""  LineBreakMode="WordWrap"
+                        MaxLines="40" />
+                 <Image x:Name="img2" Margin="0,0,0,0" MaximumHeightRequest="120"/>
+                 <Label x:Name="lb3Discription" Padding="0,15,0,0"  HorizontalTextAlignment="Start"  FontSize = "15" Text=""  LineBreakMode="WordWrap"
+                        MaxLines="40" />
+                <Image x:Name="img3" Margin="0,0,0,0" MaximumHeightRequest="120"/>
+                 <Label x:Name="lb4Discription"  Padding="0,15,0,0"  HorizontalTextAlignment="Start"  FontSize = "15" Text=""  LineBreakMode="WordWrap"
+                        MaxLines="40" />
+                 <Label x:Name = "lb5Discription" Padding="0,15,0,0"   HorizontalTextAlignment="Start"  FontSize = "15" Text=""  LineBreakMode="WordWrap"
+                        MaxLines="40" />
+                 <Label x:Name="lb6Discription" Padding="0,15,0,0"  HorizontalTextAlignment="Start"  FontSize = "15" Text=""  LineBreakMode="WordWrap"
+                       MaxLines="40" />
+                 <Label x:Name="lb7Discription" Padding="0,15,0,0"  HorizontalTextAlignment="Start"  FontSize = "15" Text=""  LineBreakMode="WordWrap"
+                        MaxLines="40" />
+            
+          </StackLayout>
+       </ScrollView>
+</ContentPage>

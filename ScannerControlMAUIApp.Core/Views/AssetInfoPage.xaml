@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUIApp.Core.Views.AssetInfoPage"
+             Title="AssetInfoPage">
+    <ScrollView>
+       
+        <VerticalStackLayout Margin="12" >
+
+            <!--<Label 
+                Text="Information"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />-->
+
+            <VerticalStackLayout Margin="0,5,0,0">
+                <Frame 
+                       Padding="5">
+
+                     <VerticalStackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Configuration"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbConfiguration"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+
+                        <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+                        <StackLayout Orientation="Horizontal" Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Model"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbModel"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+
+                        <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+                        <StackLayout Orientation="Horizontal" Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Serial No."
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbSerialNo"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+
+                        <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+                        <StackLayout Orientation="Horizontal" Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Mode"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbMode"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+
+                        <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+
+                        <StackLayout Orientation="Horizontal" Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Firmware"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbFirmware"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+
+
+                        <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+
+                        <StackLayout Orientation="Horizontal" Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Date of Manufacture"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbDoM"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+                       
+                     </VerticalStackLayout>
+
+                </Frame>
+
+                
+              
+        
+            </VerticalStackLayout>
+        
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

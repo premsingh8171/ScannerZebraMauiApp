@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUISampleApp.Views.AppSettingsPage"
+             Title="App Settings">
+    <VerticalStackLayout Margin="30" Spacing="30">
+
+        <StackLayout Orientation="Vertical" Spacing="10">
+
+            <Label
+                Text="Communication Protocol"
+                x:Name="communicationProtocolLabel"
+                VerticalOptions="Center"
+                TextColor="Gray"
+                FontSize="Body"
+                HorizontalOptions="FillAndExpand" />
+            <Picker x:Name="communicationProtocolPicker" Title="Select Communication Protocol" ItemsSource="{Binding BluetoothProtocol}" SelectedIndexChanged="OnCommunicationProtocolChanged"/>
+
+        </StackLayout>
+        <StackLayout x:Name="communicationModeStack" Orientation="Horizontal" >
+
+            <Label
+                Text="Communication Mode"
+                VerticalOptions="Center"
+                FontSize="Body"
+                HorizontalOptions="StartAndExpand" />
+            <Label
+                Text="MFI + BT LE"
+                VerticalOptions="Center"
+                FontSize="Body"
+                HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Spacing="10">
+             <Label
+                    Text="Scan To Connect"
+                    x:Name="scantoConnectLabel"
+                    VerticalOptions="Center"
+                    TextColor="Gray"
+  
+                    HorizontalOptions="FillAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Set factory defaults"
+                    VerticalOptions="Center"
+                    FontSize="Body"
+                    HorizontalOptions="FillAndExpand" />
+                <Switch Toggled="OnFactoryDefaultToggle" x:Name="factoryDefaultToggle" HorizontalOptions="End" VerticalOptions="Center"/>
+
+            </StackLayout>
+         </StackLayout>
+
+        <StackLayout x:Name="bluetoothAddressInputLayout" Orientation="Vertical" Spacing="10">
+
+            <Label
+                Text="Bluetooth Address"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand" />
+            
+            <Entry
+              MaxLength="20"
+               x:Name="bluetoothAddressInput"
+                ClearButtonVisibility="WhileEditing"
+              ReturnType="Done"
+              TextChanged="OnBluetoothAddressChanged"
+                Completed="BluetoothAddressUpdated" />
+            <Label
+                FontSize="Micro"
+                Text="Find bluetooth address from Settings > About Phone > Status > Bluetooth Address and type here."
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

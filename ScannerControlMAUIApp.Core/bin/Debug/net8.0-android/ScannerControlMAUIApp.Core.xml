@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScannerControlMAUIApp.Core</name>
+    </assembly>
+    <members>
+        <member name="T:ScannerControlMAUIApp.Core.API.Globals">
+            <summary>
+            Globals
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.Globals.#ctor">
+            <summary>
+            Initializes a new instance of Globals
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isConnectPageLoaded">
+            <summary>
+            Current status of the connect page
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isFirmwareFileSelected">
+            <summary>
+            Status when a firmware update file selected
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isScanToConnectPageLoaded">
+            <summary>
+            Current status of the scant to connect page
+            </summary>
+            <returns>Page status</returns>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isMainPageLoaded">
+            <summary>
+            Current status of the main page
+            </summary>
+            <returns>Page status</returns>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isAppSettingsPageLoaded">
+            <summary>
+            Current status of the app settings page
+            </summary>
+            <returns>Page status</returns>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isBarcodeDetailPageLoaded">
+            <summary>
+            Current status of the barcode detailed page
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._connectedId">
+            <summary>
+            The connected scanner ID.
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._connectedRow">
+            <summary>
+            The Connected Row 
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._disconnectedScanerName">
+            <summary>
+            The Disconnected Scanner Name 
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._connectedScanner">
+            <summary>
+            The Connected Scanner Object  
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.API.Globals._isScannerDisconnected">
+            <summary>
+            Current status of the scanner disconnection page
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.ImageResizer.ResizeImageAndroid(System.Byte[],System.Single,System.Single)">
+            <summary>
+            Resize the image for given image data for android device
+            </summary>
+            <param name="imageData">The image data</param>
+            <param name="width">The expect width of the image</param>
+            <param name="height">The expect height of the image</param>
+            <returns>The resize image data byte</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetInstance">
+            <summary>
+            GetInstance
+            </summary>
+            <returns>SDK instance</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.SetOperationModeOnAppSetting(ZebraBarcodeScannerSDK.OpMode)">
+            <summary>
+            Set Operation Mode On App Setting
+            </summary>
+            <param name="opMode">Operation Mode</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetSdkVersion">
+            <summary>
+            Get SDK version
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.EnableBluetoothScannerDiscovery">
+            <summary>
+            Enable Bluetooth scanner discovery process
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.DisableBluetoothScannerDiscovery">
+            <summary>
+            Disable Bluetooth scanner discovery process
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.SetSTCEnabledState(System.Boolean)">
+            <summary>
+            Enable Bluetooth scanner discovery process
+            </summary>
+            <param name="enabledState">STC enabled state</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetScanerList">
+            <summary>
+            Get Scaner List 
+            </summary>
+            <returns>ScannerModel List</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.AddNewScannerToScannerList(ZebraBarcodeScannerSDK.Scanner)">
+            <summary>
+            Add a new scanner to sannerList
+            </summary>
+            <param name="scanner">Scanner</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetScannerCommunicationProtocol(ZebraBarcodeScannerSDK.Scanner)">
+            <summary>
+            To get scanner mode type
+            </summary>
+            <param name="scanner"></param>
+            <returns>Scanner mode type</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.RemoveDeviceFromList(System.Int32)">
+            <summary>
+            RemoveDeviceFromList
+            </summary>
+            <param name="scannerID">Scanner Id</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetBarcodeList">
+            <summary>
+            Get barcode list
+            </summary>
+            <returns>BarcodeModel List</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.ClearBarcodeList">
+            <summary>
+            Clear the barcode list
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.OnDeviceConnected(System.Object,System.EventArgs)">
+            <summary>
+            Device connected event
+            </summary>
+            <param name="scannerObject">Scanner object</param>
+            <param name="eventArg">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.OnDeviceDisconnected(System.Object,System.EventArgs)">
+            <summary>
+            Scanner disconnected event
+            </summary>
+            <param name="scannerObject">Scanner object</param>
+            <param name="eventArg">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.OnDeviceDisappeared(System.Object,System.EventArgs)">
+            <summary>
+            Scanner disappeared event
+            </summary>
+            <param name="scannerObject">Scanner object</param>
+            <param name="eventArg">EventArgs</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.UpdateScannerConnectionStatus(System.Int32,System.String)">
+            <summary>
+            Update scanner connection status in scannerList
+            </summary>
+            <param name="scannerID">Scaner Id</param>
+            <param name="status">Status</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.ScannerBarcodeData(ZebraBarcodeScannerSDK.BarcodeData,System.Int32)">
+            <summary>
+            Event handler of  Barcode Data
+            </summary>
+            <param name="barcodeData">Barcode Data</param>
+            <param name="scannerID">Scanner Id</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.ScannerDisconnected(System.Int32)">
+            <summary>
+            Event handler of Scanner Disconnected
+            </summary>
+            <param name="scannerID">Scanner Id</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.ScannerConnected(ZebraBarcodeScannerSDK.Scanner)">
+            <summary>
+            Event handler of Scanner Connected
+            </summary>
+            <param name="scannerInfo">Scanner Information</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.ScannerDisappeared(System.Int32)">
+            <summary>
+            Event handler of Scanner Disappeared event
+            </summary>
+            <param name="scannerID">Scanner Id</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.ScannerAppeared(ZebraBarcodeScannerSDK.Scanner)">
+            <summary>
+            Scanner Appeared
+            </summary>
+            <param name="scannerInfo">Scanner Information</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetBluetoothParingBarcode(ZebraBarcodeScannerSDK.PairingBarcodeType,ZebraBarcodeScannerSDK.BluetoothProtocol,ZebraBarcodeScannerSDK.ScannerConfiguration,System.String)">
+            <summary>
+            Get stc pairing barcode
+            </summary>
+            <param name="barcodeType"> Barcode type</param>
+            <param name="bluetoothProtocol"> Bluetooth communication protocol</param>
+            <param name="scannerConfiguration"> Scanner configuration</param>
+            <param name="bluetoothMAC"> Bluetooth mac address</param>
+            <returns>Barcode images</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.GetBluetoothParingBarcode(ZebraBarcodeScannerSDK.PairingBarcodeType,ZebraBarcodeScannerSDK.BluetoothProtocol,ZebraBarcodeScannerSDK.ScannerConfiguration)">
+            <summary>
+            Get stc pairing barcode without Bluetooth MAC address
+            </summary>
+            <param name="barcodeType"> Barcode type</param>
+            <param name="bluetoothProtocol"> Bluetooth communication protocol</param>
+            <param name="scannerConfiguration"> Scanner configuration</param>
+            <returns>Barcode images</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.API.SDKHandler.FirmwareUpdate(ZebraBarcodeScannerSDK.FirmwareUpdateEvent)">
+            <summary>
+             Event handler for firmware update
+            </summary>
+            <param name="firmwareUpdateEvent">Firmware update event</param>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.AppSettingModel">
+            <summary>
+            App Setting Model
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.AppSettingViewModel">
+            <summary>
+            App Setting View Model
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Model.AppSettingViewModel.#ctor(System.String)">
+            <summary>
+            set App Setting View Model 
+            </summary>
+            <param name="name">Name</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Model.AppSettingViewModel.#ctor(System.String,System.Collections.Generic.IEnumerable{ScannerControlMAUIApp.Core.Model.AppSettingModel})">
+            <summary>
+             set App Setting View Model 
+            </summary>
+            <param name="name">Name</param>
+            <param name="source">Source</param>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.BarcodeModel">
+            <summary>
+            BarcodeModel
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.HelpPairModel">
+            <summary>
+            Help Pair Model
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.HelpPairViewModel">
+            <summary>
+            Help PairView Model
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Model.HelpPairViewModel.HelpMenuItemsTypeOne">
+            <summary>
+            Help Menu Items Type One
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Model.HelpPairViewModel.HelpMenuItemsTypeTwo">
+            <summary>
+            Help MenuItems Type Two
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.HelpViewModel">
+            <summary>
+            Help view model
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.MenuItemModel">
+            <summary>
+            Menu Item Model
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.MenuItemViewModel">
+            <summary>
+            Menu Item View Model
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.ScannerModel">
+            <summary>
+            Scanner Model
+            </summary>
+        </member>
+        <member name="F:ScannerControlMAUIApp.Core.Model.ScannerModel._name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:ScannerControlMAUIApp.Core.Model.ScannerModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:ScannerControlMAUIApp.Core.Model.ScannerModel.ModeType">
+            <summary>
+            ModeType
+            </summary>
+        </member>
+        <member name="P:ScannerControlMAUIApp.Core.Model.ScannerModel.ScannerObject">
+            <summary>
+            ScannerObject
+            </summary>
+        </member>
+        <member name="P:ScannerControlMAUIApp.Core.Model.ScannerModel.ConnectionStatus">
+            <summary>
+            ConnectionStatus
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.ScannerViewModel">
+            <summary>
+            This tempory class to see the ui with sample reader.
+            will remove after api integration
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.SettingsMenuItemViewModel">
+            <summary>
+            SettingsMenuItemViewModel
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.SymbologiesItemViewModel">
+            <summary>
+            SymbologiesItemViewModel
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Model.SymbologiesItemViewModel.#ctor">
+            <summary>
+            Initializes a new instance of SymbologiesItemViewModel
+            </summary>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Model.SymbologiesModel">
+            <summary>
+            SymbologiesModel
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ActiveScanner.OnDeviceDisconnectedEventHandler(System.Object,System.EventArgs)">
+            <summary>
+            Event handler of Scanner Disconnected event
+            </summary>
+            <param name="obj">Object</param>
+            <param name="args">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.LoadDefaultConfiguration">
+            <summary>
+            Set factory default configuration on the ui
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.LoadingComProtocol">
+            <summary>
+            Method to load saved preferences to get communication protocols and set up UI
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.OnCommunicationProtocolChanged(System.Object,System.EventArgs)">
+            <summary>
+            Communication protocol changed action
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.OnFactoryDefaultToggle(System.Object,Microsoft.Maui.Controls.ToggledEventArgs)">
+            <summary>
+            Factory default toggle action
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.OnBluetoothAddressChanged(System.Object,Microsoft.Maui.Controls.TextChangedEventArgs)">
+            <summary>
+            Bluetooth address text input changed action
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.LoadBluetoothAddress">
+            <summary>
+            Set bluetooth address when loading the ui
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.RemoveIncorrectColonCharcters(System.String)">
+            <summary>
+            Clean incorrect colon characters from inserted text
+            </summary>
+            <param name="cleanMACAddressWithColons">User typed mac address</param>
+            <returns>Filtered mac address</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.CleanIncorrectMACAddress(System.String)">
+            <summary>
+            Clean incorrect MAC address characters from inserted text
+            </summary>
+            <param name="enteredMACAddress">User typed mac address</param>
+            <returns>Filtered mac address</returns>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.SetBluetoothAddressTxt(System.String)">
+             <summary>
+             Set bluetooth mac address
+             </summary>
+             <param name="bluetoothMacAddress">Completed bluetooth mac address</param>
+            
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.BluetoothAddressUpdated(System.Object,System.EventArgs)">
+            <summary>
+            Bluetooth address text input completed action
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AppSettingsPage.SetOperationModeInAppSetting(ZebraBarcodeScannerSDK.OpMode)">
+            <summary>
+            Set operation mode for the scanner
+            </summary>
+            <param name="opMode">Operation Mode</param>
+        </member>
+        <member name="T:ScannerControlMAUIApp.Core.Views.BluetoothProtocolModel">
+            <summary>
+            BluetoothProtocolModel to set the bluetooth protocol list in the picker view
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AssetInfoPage.LoadAssetInfo">
+            <summary>
+            Load asset information
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.OnAppearing">
+            <summary>
+            Page Appearing
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.OnDisappearing">
+            <summary>
+            Page Disappearing
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.OnScannerAppearEventHandler(ZebraBarcodeScannerSDK.Scanner)">
+            <summary>
+            Event handler of scanner appear 
+            </summary>
+            <param name="scanner">Scanner object</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.OnDeviceDisappearedEventHandler(System.Object,System.EventArgs)">
+            <summary>
+            Event handler of Scanner Disappeared event
+            </summary>
+            <param name="obj">Object</param>
+            <param name="args">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.OnItemSelected(System.Object,Microsoft.Maui.Controls.ItemTappedEventArgs)">
+            <summary>
+            Selecte a scanner in Listview
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="tappedEventArg">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.HideLoadingIndicator">
+            <summary>
+            Hide activity indicator
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.AvailableScannerList.ShowActivityIndicator">
+            <summary>
+            Show activity indicator
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.BarcodeDataPage.OnAppearing">
+            <summary>
+            Page Appearing
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.BarcodeDataPage.OnDisappearing">
+            <summary>
+            Page Disappearing
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScannerControlMAUIApp.Core.Views.BarcodeDataPage.BarcodeDataReceivedEvent(ZebraBarcodeScannerSDK.BarcodeData,System.Int32)" -->
+        <member name="M:ScannerControlMAUIApp.Core.Views.BarcodeDataPage.OnItemSelected(System.Object,Microsoft.Maui.Controls.ItemTappedEventArgs)">
+            <summary>
+            Select a barcode in Listview
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="tappedEventArg">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.BarcodeDetailsPage.BarcodeDataReceivedEvent(ZebraBarcodeScannerSDK.BarcodeData,System.Int32)">
+            <summary>
+            Event handler of  Barcode Data
+            </summary>
+            <param name="barcodeData">Barcode Data</param>
+            <param name="scannerID">Scanner Id</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ConnectionHelp.ConnectionHelpDetailPage.clearAllLableText">
+            <summary>
+            clear all label
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ConnectionHelp.ConnectionHelpPage.OnItemSelected(System.Object,Microsoft.Maui.Controls.ItemTappedEventArgs)">
+            <summary>
+            On Item Selected in listview
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="tappedEventArg">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ConnectionHelp.MfiBtleSelectionPage.OnItemSelected(System.Object,Microsoft.Maui.Controls.ItemTappedEventArgs)">
+            <summary>
+            On Item Selected in listview
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="tappedEventArg">Event Argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.MorePage.OnItemSelected(System.Object,Microsoft.Maui.Controls.ItemTappedEventArgs)">
+            <summary>
+            OnItemSelected in listview
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="tappedEventArg">Event argument</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ScannerSettingsPage.AimOnAction(System.Object,System.EventArgs)">
+            <summary>
+            Action to turn on Scanner Aim
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ScannerSettingsPage.AimOffAction(System.Object,System.EventArgs)">
+            <summary>
+            Action to turn off Scanner Aim
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ScannerSettingsPage.EnableScanningAction(System.Object,System.EventArgs)">
+            <summary>
+            Action to enable scanning
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.ScannerSettingsPage.DisableScanningAction(System.Object,System.EventArgs)">
+            <summary>
+            Action to disable scanning
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.Views.TabPage.OnBarcodeDataRecived(ZebraBarcodeScannerSDK.BarcodeData,System.Int32)">
+            <summary>
+            Event handler of  Barcode Data
+            </summary>
+            <param name="barcodeData">Barcode Data</param>
+            <param name="scannerID">Scanner Id</param>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.ScanToConnectPage.STCBarcodeDraw">
+            <summary>
+            Generate stc barcode 
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.ScanToConnectPage.OnDisappearing">
+            <summary>
+            On disappearing event
+            </summary>
+        </member>
+        <member name="M:ScannerControlMAUIApp.Core.ScanToConnectPage.OnDeviceConnectedEventHandler(System.Object,System.EventArgs)">
+            <summary>
+            Event handler of Scanner Connected event
+            </summary>
+            <param name="obj">Object</param>
+            <param name="args">Argument Event</param>
+        </member>
+    </members>
+</doc>

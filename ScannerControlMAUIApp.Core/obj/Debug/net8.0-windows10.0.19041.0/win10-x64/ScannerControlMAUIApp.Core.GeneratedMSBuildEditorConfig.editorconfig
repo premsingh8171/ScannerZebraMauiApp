@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ScannerControlMAUIApp.Core
+build_property.ProjectDir = D:\Dot NET MAUI APPS\ScannerControlMAUISampleApp\ScannerControlMAUIApp.Core\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/ActiveScanner.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.ActiveScanner.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ActiveScanner.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ActiveScanner.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/AppSettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.AppSettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AppSettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AppSettingsPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/AssetInfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.AssetInfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AssetInfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AssetInfoPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/AvailableScannerList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.AvailableScannerList.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AvailableScannerList.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AvailableScannerList.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/BarcodeDataPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.BarcodeDataPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BarcodeDataPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BarcodeDataPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/BarcodeDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.BarcodeDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BarcodeDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BarcodeDetailsPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/ConnectionHelp/ConnectionHelpDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.ConnectionHelp.ConnectionHelpDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConnectionHelp\ConnectionHelpDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConnectionHelp\ConnectionHelpDetailPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/ConnectionHelp/ConnectionHelpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.ConnectionHelp.ConnectionHelpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConnectionHelp\ConnectionHelpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConnectionHelp\ConnectionHelpPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/ConnectionHelp/MfiBtleSelectionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.ConnectionHelp.MfiBtleSelectionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConnectionHelp\MfiBtleSelectionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConnectionHelp\MfiBtleSelectionPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/MorePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.MorePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MorePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MorePage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/ScannerSettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.ScannerSettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ScannerSettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ScannerSettingsPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/ScanToConnectPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.ScanToConnectPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ScanToConnectPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ScanToConnectPage.xaml
+
+[D:/Dot NET MAUI APPS/ScannerControlMAUISampleApp/ScannerControlMAUIApp.Core/Views/TabPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScannerControlMAUIApp.Core.Views.TabPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TabPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TabPage.xaml

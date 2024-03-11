@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUIApp.Core.ScanToConnectPage"
+             Title="Pair New Scanner">
+    <ContentPage.ToolbarItems>
+       <ToolbarItem
+            Clicked="OnSettingsClicked"
+            IconImageSource="settings_icon.png" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout Spacing="20">
+        <Label Text="Scan barcode to pair your cordless scanner to this app"
+       LineBreakMode="WordWrap"
+       FontSize="Body"
+       Padding="20"
+       MaxLines="2" />
+        <StackLayout BackgroundColor="White" Margin="10">
+            <Image 
+                 x:Name="stcImage"                         
+                   Aspect="AspectFit"
+                    WidthRequest="280"
+                    HeightRequest="200"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="FillAndExpand"
+                />
+        </StackLayout>
+        
+      
+    </VerticalStackLayout>
+</ContentPage>

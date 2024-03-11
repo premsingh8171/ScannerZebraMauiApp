@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUISampleApp.Views.ActiveScanner"
+             Title="Active Scanner">
+    
+    <ScrollView>
+       
+        <VerticalStackLayout Margin="15" >
+
+            <VerticalStackLayout Margin="0,5,0,0" Spacing="100">
+                <Frame 
+                       Padding="5">
+
+                     <VerticalStackLayout>
+                        <StackLayout Orientation="Horizontal"  Padding="10"
+                                    Background="White"
+                                     >
+                            <Label 
+                                   Text="Name"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+
+                            <Label x:Name="lbScannerName"
+                                   Text=""
+                                   FontSize="Body"
+                                   TextColor="DarkGray"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+
+                           
+                        </StackLayout >
+
+                        <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+
+                       <StackLayout Orientation="Horizontal" Padding="10"
+                                     
+                                     >
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestureRecognizerTappedAssetInfo"
+                                         NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+
+                            <Label Text="Asset Info"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+                            <Image 
+                                    Source="right_arrow"
+                                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center"/>
+                        </StackLayout>
+                     </VerticalStackLayout>
+
+                </Frame>
+
+                
+              
+                <Button
+                        x:Name="DisconnectBtn"
+                        Text="Disconnect"
+                        SemanticProperties.Hint="Counts the number of times you click"
+                        Clicked="OnDisconnecBtnClicked"
+                            />
+              
+        
+            </VerticalStackLayout>
+        
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

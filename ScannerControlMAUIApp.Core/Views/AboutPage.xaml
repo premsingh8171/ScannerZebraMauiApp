@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUIApp.Core.Views.AboutPage"
+             Title="About"
+            >
+    <VerticalStackLayout Margin="10">
+    <Frame  Padding="5">
+        <VerticalStackLayout>
+             <StackLayout Orientation="Horizontal" Padding="10"
+                                        Background="White"
+                                         >
+                                <Label 
+                                       Text="Zebra Scanner Control version"
+                                       FontSize="Body"
+                                       VerticalOptions="Center" />
+
+                                <Label x:Name="lbAppVersion"
+                                       Text=""
+                                       FontSize="Body"
+                                       TextColor="DarkGray"
+                                       HorizontalOptions="EndAndExpand"
+                                       VerticalOptions="Center" />
+
+                           
+                </StackLayout >
+                <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+
+                <StackLayout Orientation="Horizontal" Padding="10"
+                                        Background="White"
+                                         >
+                                <Label 
+                                       Text="Zebra Scanner SDK version"
+                                       FontSize="Body"
+                                       VerticalOptions="Center" />
+
+                                <Label x:Name="lbSdkVersion"
+                                       Text=""
+                                       FontSize="Body"
+                                       TextColor="DarkGray"
+                                       HorizontalOptions="EndAndExpand"
+                                       VerticalOptions="Center" />
+
+                           
+                </StackLayout >
+
+                <BoxView Color= "LightGray"
+                                    HeightRequest="1"/>
+
+                <Label x:Name="lbCopyright"
+                                       Text=""
+                                       FontSize="Body"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="Center" />
+        </VerticalStackLayout>
+    </Frame>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:ScannerControlMAUIApp.Core.Views"
+            x:Class="ScannerControlMAUIApp.Core.Views.TabPage"
+            Title="Active Scanner"
+            NavigationPage.HasBackButton="False">
+
+
+    <local:ActiveScanner Title="Info" IconImageSource="info">
+    </local:ActiveScanner>
+    <local:BarcodeDataPage Title="Barcode" IconImageSource="barcode">
+    </local:BarcodeDataPage>
+    <local:ScannerSettingsPage Title="Settings" IconImageSource="settings">
+    </local:ScannerSettingsPage>
+
+</TabbedPage>

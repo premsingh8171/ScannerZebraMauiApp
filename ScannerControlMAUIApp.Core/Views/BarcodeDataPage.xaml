@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUIApp.Core.Views.BarcodeDataPage"
+             Title="BarcodeDataPage">
+        <ListView Margin="5,20,0,0"  x:Name="lstBarcodes" ItemTapped="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding DecodeData}"
+                              Detail="{Binding BarcodeType}" />-->
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+
+                        <StackLayout Orientation="Vertical" Padding="5,0,0,0">
+
+                            <Label MaxLines="1"
+                                   Text="{Binding DecodeData}"
+                                   FontSize="Body"
+                                   VerticalOptions="Center" />
+                            <Label Text="{Binding BarcodeType}"
+                                   FontSize="Small"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center" />
+                         </StackLayout>
+                         <Image 
+                                    Source="right_arrow"
+                                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center"/>
+                     </StackLayout>
+
+                </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+</ContentPage>

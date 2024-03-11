@@ -1,0 +1,1 @@
+D:\Dot NET MAUI APPS\ScannerControlMAUISampleApp\ScannerControlMAUIApp.Core\ScannerControlMAUIApp.Core.csproj;x64

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUIApp.Core.Views.ConnectionHelp.MfiBtleSelectionPage"
+             Title="MfiBtleSelectionPage">
+  <ListView ItemsSource="{Binding BluetoothPairList}"
+                       Margin="10,20,0,0"
+                       HasUnevenRows="true"
+                       SeparatorVisibility="Default"
+                       ItemTapped="OnItemSelected"
+                       >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                         <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+
+                                <Label
+                                    Text="{Binding PairName}"
+                                    FontSize="Body"
+                                    VerticalOptions="Center" />
+                     
+                                <Image 
+                                    Source="right_arrow"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+        </ListView>
+</ContentPage>

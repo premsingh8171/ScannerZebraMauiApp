@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScannerControlMAUISampleApp.Views.AvailableScannerList"
+             Title="Available Scanner List">
+    <StackLayout>
+        <StackLayout HeightRequest="60" VerticalOptions="End">
+      <ActivityIndicator
+          x:Name="listIndicator"
+          IsRunning="False"
+                         IsVisible="False"
+                          HeightRequest="40"
+                          VerticalOptions="CenterAndExpand"
+                          HorizontalOptions="CenterAndExpand"
+                          Color="#2499CE"
+                          WidthRequest="100">
+      </ActivityIndicator>
+            <Label x:Name="lbConnectingStatus" Text="Connecting to scanner.Please wait.." HorizontalOptions="Center"></Label>
+    </StackLayout>
+    <ListView Margin="5,20,0,0"  x:Name="lsScaners" ItemTapped="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+
+                            <StackLayout Orientation="Vertical" Padding="5,0,0,0">
+
+                                <Label MaxLines="1"
+                                       Text="{Binding Name}"
+                                       FontSize="Body"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding ModeType}"
+                                       FontSize="Small"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center" />
+                             </StackLayout>
+                             <Image 
+                                        Source="right_arrow"
+                                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center"/>
+                         </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+     </StackLayout>
+</ContentPage>
